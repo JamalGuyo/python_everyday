@@ -40,3 +40,32 @@ Going through [Havard's cs50 introduction to programming in python]('https://www
           for i, student in enumerate(students,100):
               print(i, student)
       ```
+
+    - Dictionaries
+
+      ```python
+          students = {
+              "Hermione": "Gryffindor",
+              "Harry": "Gryffindor",
+              "Ron": "Gryffindor",
+              "Draco": "Syltherine",
+          }
+
+          for student in students:
+              print(student, students[student], sep=",")
+
+      ```
+
+          - by default looping thro' dictionaries outputs the keys
+
+      ```python
+          students2 = [
+              {"name": "Harry", "house": "Gryffindor", "patronus": "Stag"},
+              {"name": "Ron", "house": "Gryffindor", "patronus": "Jack Russell Terrier"},
+              {"name": "Hermione", "house": "Gryffindor", "patronus": "Otter"},
+              {"name": "Draco", "house": "Syltherine", "patronus": None},
+          ]
+
+          for student in students2:
+              print(student["name"], sep=",")
+      ```
