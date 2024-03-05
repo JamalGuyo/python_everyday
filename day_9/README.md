@@ -46,3 +46,17 @@ Going through [Havard's cs50 introduction to programming in python]('https://www
    ```
 
    - the above line is shortened, pytest will handle the try except block as well as printing the error message. `pytest test_calculator.py`
+   - All the tests in the function are run as one unit. If one test fails the tests that follow won't be tested. We can solve this by separating the tests.
+
+   ```python
+    def test_positive():
+        assert square(2) == 4
+        assert square(3) == 9
+
+    def test_negative():
+        assert square(-2) == 4
+        assert square(-3) == 9
+
+    def test_zero():
+        assert square(0) == 0
+   ```
