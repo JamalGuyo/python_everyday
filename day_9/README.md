@@ -60,3 +60,5 @@ Going through [Havard's cs50 introduction to programming in python]('https://www
     def test_zero():
         assert square(0) == 0
    ```
+
+- You can group all the tests together in a package and run them all. create a folder called `test` with `__init__.py` and basically run `pytest test`. All the test modules in the package will be run.
