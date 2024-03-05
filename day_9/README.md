@@ -34,4 +34,15 @@ Going through [Havard's cs50 introduction to programming in python]('https://www
             print("3 squared is not 9")
    ```
 
-   - The above example is still to verbose.
+   - The above example is still to verbose. We are writing so much code to test the square function. `pytest` addresses this problem
+
+   ```python
+   def test_square():
+       assert square(2) == 4
+       assert square(3) == 9
+       assert square(-2) == 4
+       assert square(-3) == 9
+       assert square(0) == 0
+   ```
+
+   - the above line is shortened, pytest will handle the try except block as well as printing the error message. `pytest test_calculator.py`

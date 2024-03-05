@@ -12,7 +12,7 @@ def main():
 
 def square(n):
     """square function"""
-    return n + n
+    return n * n
 
 
 if __name__ == "__main__":
