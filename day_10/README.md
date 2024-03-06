@@ -39,3 +39,12 @@ Going through [Havard's cs50 introduction to programming in python]('https://www
         for line in files:
             print("Hello,", line.rstrip())
    ```
+
+   - we can read from csv files as follows
+
+   ```python
+   with open("students.txt") as file:
+       for line in file:
+           name, house = line.rstrip().split(",")
+           print(name, house)
+   ```
