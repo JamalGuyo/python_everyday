@@ -47,4 +47,9 @@ Going through [Havard's cs50 introduction to programming in python]('https://www
        for line in file:
            name, house = line.rstrip().split(",")
            print(name, house)
+
+        # we can simplify the code above and leave the handling of separators to a builtin python module for csv's
+        reader = csv.reader(file)
+        for name, house in reader:
+            print(name, house)
    ```
