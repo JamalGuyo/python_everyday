@@ -15,3 +15,11 @@ Going through [Havard's cs50 introduction to programming in python]('https://www
     ```
 
     - the first aregument is the regular expression, the second argument is the string to check and the third argument is regular expression flags
+
+2.  Walrus operator
+    - `:=` this operator allows you to assign a value to a variable in an expression
+    ```python
+    if matches := re.search(r"^(.+), (.+)$", name):
+    fname, lname = matches.groups()
+    name = f"{fname} {lname}"
+    ```
