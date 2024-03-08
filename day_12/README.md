@@ -66,10 +66,18 @@ Going through [Havard's cs50 introduction to programming in python]('https://www
    ```python
    class Student:
         def __init__(self, name, house):
-            if not name:
-                raise ValueError("Missing name")
             self.name = name
             self.house = house
+
+        @property
+        def name(self):
+            return self._name
+
+        @name.setter
+        def name(self, name):
+            if not name:
+                raise ValueError("Missing name")
+            self._name = name
 
         @property
         def house(self):
