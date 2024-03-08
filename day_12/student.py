@@ -3,19 +3,41 @@ classes in python
 """
 
 
-class Student: 
-    ...
+class Student:
+    def __init__(self, name, house):
+        if not name:
+            raise ValueError("Missing name")
+        self.name = name
+        self.house = house
+
+    @property
+    def house(self):
+        return self._house
+
+    @house.setter
+    def house(self, house):
+        if house not in [
+            "Gryffindor",
+            "Ravenclaw",
+            "Slytherine",
+            "Hufflepuff",
+        ]:
+            raise ValueError("Invalid house")
+        self._house = house
+
+    def __str__(self) -> str:
+        return f"{self.name} from {self.house}"
 
 
 def main():
     student = get_student()
-    print(f"{student.name} is in {student.house}")
+    print(student)
 
 
 def get_student():
-    student = Student()
-    student.name = input("What's your name?")
-    student.house = input("What's your house?")
+    name = input("What's your name?")
+    house = input("What's your house?")
+    student = Student(name, house)
 
     return student
 
