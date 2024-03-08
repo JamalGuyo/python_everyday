@@ -16,7 +16,7 @@ Going through [Havard's cs50 introduction to programming in python]('https://www
        ...
    ```
 
-   - class instance attributes
+   - class instance properties
 
    ```python
    class Student:
@@ -94,4 +94,18 @@ Going through [Havard's cs50 introduction to programming in python]('https://www
 
    student = Student("Harry", "Nairobi")
    print(student)
+   ```
+
+   - using class methods and properties
+
+   ```python
+   class hat:
+        houses = ["Gryffindor", "Slytherine", "Ravenclaw", "Hufflepuff"]
+
+        @classmethod
+        def sort(cls, name):
+            print(name, "is in", random.choice(cls.houses))
+
+
+    hat.sort("Harry")
    ```
