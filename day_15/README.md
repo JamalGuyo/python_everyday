@@ -51,3 +51,21 @@ Going through [Havard's cs50 introduction to programming in python]('https://www
         def deposit(self, n):
             self._balance += n
    ```
+
+3. constants
+
+   - python doesn't enforce constant variables. You can declare a variable to be a constant by typing it in uppercase.
+
+   ```python
+   MEOWS = 3
+   for _ in range(MEOWS):
+       print("meow")
+   ```
+
+4. Type Hints
+   - python is not strongly typed. We can write type hints in Python even though it will not be enforced. We can use `mypy` to check for any type errors.
+   ```python
+    def meow(n:int) -> None:
+        for _ in range(n):
+            print("meow")
+   ```
