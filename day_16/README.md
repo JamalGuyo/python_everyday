@@ -36,3 +36,21 @@ Going through [Havard's cs50 introduction to programming in python]('https://www
    for _ in range(args.n):
        print("meow")
    ```
+
+3. unpacking
+
+   ```python
+   def total(galleons, sickles, knuts):
+        return (galleons * 17 + sickles) * 29 + knuts
+
+   coins = [100, 50, 25]
+   coinsDict = {"galleons": 100, "sickles": 50, "knuts": 25}
+   print(total(**coinsDict), "knuts")
+
+
+   def f(*args, **kwargs):
+       print(args)
+       print(kwargs)
+   f(100, 100)
+   f(galleons=100, sickles=50)
+   ```
