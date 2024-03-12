@@ -23,3 +23,16 @@ Going through [Havard's cs50 introduction to programming in python]('https://www
     """
     return "meow"*n
    ```
+
+2. `argparse` to document argv arguments
+
+   ```python
+   import argparse
+
+   parser = argparse.ArgumentParser("Meow like a cat")
+   parser.add_argument("-n", default=1, type=int, help="Number of times to meow")
+   args = parser.parse_args()
+
+   for _ in range(args.n):
+       print("meow")
+   ```
