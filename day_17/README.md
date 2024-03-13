@@ -38,3 +38,11 @@ Going through [Havard's cs50 introduction to programming in python]('https://www
     students = ['Harry', 'Ron']
     gryffindors = {student: 'Gryffindor' for student in students}
    ```
+5. enumerate
+
+- This is used inside the for loop to display the index of an iterable
+
+    ```python
+    for i in enumerate(students):
+        print(i)
+    ```
