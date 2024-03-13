@@ -33,3 +33,8 @@ Going through [Havard's cs50 introduction to programming in python]('https://www
    ]
    gryffindors = filter(lambda s: s['house'] == 'Gryffindor',students)
    ```
+4. dictionary comprehension
+   ```python
+    students = ['Harry', 'Ron']
+    gryffindors = {student: 'Gryffindor' for student in students}
+   ```
