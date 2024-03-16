@@ -28,3 +28,6 @@ Going through [ Python series by socratis]('https://www.youtube.com/watch?v=iAzS
    import math # imports the math module
    dir() # this shows a list of modules available, use this to confirm
    ```
+
+3. booleans
+   - python uses `True` and `False` as booleans
