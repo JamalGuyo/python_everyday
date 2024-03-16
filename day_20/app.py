@@ -1,6 +1,9 @@
 """built_in objects and modules"""
 
-import math
+import datetime
 
 print(dir())
 print(__builtins__)
+
+print(dir(datetime))
+print(datetime.datetime.today())

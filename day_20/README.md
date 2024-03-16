@@ -30,4 +30,15 @@ Going through [ Python series by socratis]('https://www.youtube.com/watch?v=iAzS
    ```
 
 3. booleans
+
    - python uses `True` and `False` as booleans
+
+4. builtin date module
+
+   ```python
+   import datetime
+   print(dir()) # chcek if datetime module has been imported
+   print(dir(datetime)) # check all available object in datetime module
+
+   print(datetime.datetime.today()) # access todays date and time
+   ```
