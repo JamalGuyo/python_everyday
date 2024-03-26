@@ -10,3 +10,6 @@ Going through [ Python series by socratis]('https://www.youtube.com/watch?v=iAzS
 
 - `random` displays random numbers between 0 to 1 but 1 not included. `uniform` can be used to generate random numbers between a range.
 - we can also display random value from a list of choices using `random.choice(list)`
+
+2. list comprehension
+   `[expr for val in collection if test]`
