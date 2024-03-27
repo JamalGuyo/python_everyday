@@ -7,3 +7,14 @@ Going through [ Python series by socratis]('https://www.youtube.com/watch?v=iAzS
 ## concepts covered
 
 1. classes
+
+- classes are templates for creating objects with related data and functions to do interesting things with those data.
+
+```Python
+class User:
+  pass
+
+user1 = User() # instance of a class | object
+user1.first_name = "Jeremy" # field: data attached to an object
+print(user1. first_name)
+```
